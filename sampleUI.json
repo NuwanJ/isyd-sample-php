@@ -1,0 +1,30 @@
+[
+    {
+        "type": "heading",
+        "size": "1",
+        "value": "Main Heading",
+        "alignment": "center",
+        "validation": [{"required": false}]
+    },
+    {
+        "type": "paragraph",
+        "value": "This is a sample paragraph",
+        "alignment": "left",
+        "validation": [{"required": false}]
+    },
+    {
+        "type": "text",
+        "name": "value",
+        "label": "Set Value",
+        "place_holder": "Enter Value",
+        "value": "30",
+        "column": "1",
+        "validation": [
+            {
+                "required": true,
+                "max": "100",
+                "min": "0"
+            }
+        ]
+    }
+]

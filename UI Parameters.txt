@@ -1,0 +1,204 @@
+Text field
+{
+"type": "text",
+"name": "humidity",
+"label": "Set Value",
+"place_holder": "Enter Value",
+"value": "30",
+"column": "1",
+"validation": []
+}
+
+Unit in Text field
+{
+"type": "text_span",
+"name": "wind",
+"label": "Set Value",
+"place_holder": "Enter Value",
+"value": "12",
+"unit": "km/h",
+"column": "2",
+"validation": []
+}
+
+Drop down box
+{
+"type": "drop_down",
+"name": "condition",
+"label": "Set Condition",
+"options": [{"1": "Greater Than"},{"2": "Less than"}],
+"value": "1",
+"column": "1",
+"validation": []
+}
+
+
+Dynamic drop down box
+{
+"type": "dyna_drop_down",
+"name": "locator",
+"label": "Select Device",
+"options": [],
+"value": "1",
+"column": "1",
+"validation": [],
+"data-options": [{"type": "locator","url": "http: //ilocator.com/fetchdevice"}]
+}
+
+
+Checkbox
+{
+"type": "checkbox",
+"name": "favorite_1",
+"label": "Select Favorite",
+"value": "cake",
+"column": "1",
+"validation": []
+}
+
+RadioButton
+{
+"type": "radio",
+"name": "gender[]",
+"label": "Select Gender",
+"value": "male",
+"column": "1",
+"validation": []
+}
+
+TextArea{
+"type": "textarea",
+"name": "comment",
+"label": "Add Comment",
+"place_holder": "Enter Comment",
+"value": "",
+"rows": "5",
+"column": "1",
+"validation": []
+}
+
+Image{
+"type": "image",
+"src": "logo.jpg""width": "100px",
+"height": "100px",
+"alt": "image.jpg",
+"align": "center"
+}
+
+DateandTime{
+"type": "datetime",
+"name": "sunset",
+"label": "Alert Date and Time",
+"value": "2016-03-01 19:15:10",
+"column": "2",
+"previousDateTime": true|false,
+"validation": []
+}
+
+Date{
+"type": "date",
+"name": "date",
+"label": "Birthday",
+"value": "2016-03-01",
+"column": "2",
+"previousDate": true|false,
+"validation": []
+}
+
+Time{
+"type": "time",
+"name": "time",
+"label": "Time",
+"value": "19:15:10",
+"column": "2",
+"previousTime": true|false,
+"validation": []
+}
+
+Location(Map)
+{
+"type": "location",
+"name": "location",
+"center_latitude": "6.9184859",
+"center_longitude": "79.8630166",
+"zoom_level": "17",
+"latitude": "6.9184859",
+"longitude": "79.8630166",
+"column": "1",
+"validation": []
+}
+
+GooglePlace
+{
+"type": "text_location",
+"name": "city_name",
+"label": "Select a Location",
+"place_holder": "Select a Location",
+"value": "Colombo, Western Province, Sri Lanka",
+"column": "1",
+"validation": []
+}
+
+Hiddenfield
+{
+"type": "hidden",
+"name": "code",
+"value": "30",
+"validation": []
+}
+
+Heading
+{
+"type": "heading",
+"size": "1|2|3",
+"value": "Main Heading",
+"alignment": "left|center|right",
+"validation": []
+}
+
+Paragraph
+{
+"type": "paragraph",
+"value": "Paragraph Content",
+"alignment": "left|center|right|justify",
+"validation": []
+}
+
+Slider
+{
+"type": "range",
+"name": "condition",
+"value": "50",
+"min": "0",
+"max": "100",
+"column": "2",
+"label": "Select Temperature",
+"step": "1",
+"place_holder": "Select value",
+"unit": "C",
+"validation": []
+}
+
+SelectButton
+{
+"type": "select_button",
+"name": "condition",
+"value": "1",
+"label": "Select Gender",
+"column": "2",
+"options": [{"1": "Greater Than"},{"2": "Less than"}],
+"validation": []
+}
+
+
+
+
+Validation Array Content
+
+"required" : true | false
+"data_type" : "string" | "integer" | "float" | "email" I "msisdn"
+"format" : "10,2" (2 decimal points)
+"max" : "100"
+"min" : "0"
+"location_required" : true | false
+"auth_required" : true | false
